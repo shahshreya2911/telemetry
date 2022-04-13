@@ -7,7 +7,11 @@
     <!-- Google Tag Manager -->
     <!-- End Google Tag Manager -->
     <meta charset="utf-8" />
-    <title>{{ config('app.name', 'Iniquesolutions - Laravel 8') }}</title>
+    @if(auth()->user()->role == 'admin')
+        <title>{{ config('app.name', 'Groundhogg - Admin Panel ') }}</title>
+    @else 
+        <title>{{ config('app.name', 'Groundhogg - User Panel ') }}</title>
+    @endif
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <link href="{{asset('assets')}}/css/custom.css" rel="stylesheet" type="text/css" />

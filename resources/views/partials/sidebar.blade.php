@@ -4,7 +4,8 @@
         <!--begin::Logo-->
         <a href="#" class="brand-logo">
             {{-- <img alt="Logo" src="{{asset('metch')}}/media/logos/logo-light.png" /> --}}
-            <!-- <span class="text-center"><i class="fab fa-angrycreative fa-4x"></i></span> -->
+            <!-- <span class="text-center"><i class="fab fa-angrycr
+                eative fa-4x"></i></span> -->
             <img alt="Logo" src="{{asset('assets')}}/image/groundhogg-logo-black.svg" width="100px" />
         </a>
         <!--end::Logo-->
