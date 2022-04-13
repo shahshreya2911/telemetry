@@ -13,7 +13,7 @@ This template is for educational only
 #### -clone this repo and then open this project into your code editor (vs code recommended) 
 
 ```
-git clone https://github.com/oryfikry/laravel-8-boilerplate.git
+git clone https://github.com/shahshreya2911/telemetry.git
 ```
 #### -rename .env.example to .env
 #### -run composer
