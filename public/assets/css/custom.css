@@ -1,0 +1,40 @@
+body{
+  /*background-color: red !important ; */
+}
+
+.pagination1 svg{
+  height: 24px; 
+  width: 24px;   
+}
+
+.pagination1 {
+  padding: 3%; 
+  width: 100%; 
+}
+
+.pagination1 .flex.justify-between.flex-1.sm\:hidden {
+    float: right;
+}
+.topbar{
+  width: 100%; 
+}
+.topbar-item-logout{
+  /*float: right;*/
+  margin-left: 65%;
+}
+.topbar-item-breadcrumb{
+  float: left;
+}
+.page-header{
+  border-right:1px solid #e2e5ec;
+  font-weight:400;
+  padding-right:20px;
+  margin-right:15px
+}
+.breadcrumb1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 3px;
+    list-style: none;
+    border-radius: 0.25rem;
+}
