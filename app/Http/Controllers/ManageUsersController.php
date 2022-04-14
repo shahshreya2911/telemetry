@@ -91,6 +91,9 @@ class ManageUsersController extends Controller
 
         $data = Users::find($request->user_id);
         $data->name = $request->name;
+        if(!empty($request->password)){
+            $data->password = Hash::make($request->password);
+        }
         $data->save();
         return redirect()->route('users')->withSuccess("User Updated Successfully.");
     }
