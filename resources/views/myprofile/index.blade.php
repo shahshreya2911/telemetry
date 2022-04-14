@@ -30,7 +30,11 @@
                             <label for="email">Email </label>
                             <input type="email" class="form-control" id="email" name="email" value="{{$user->email}}"  required readonly >
                         </div>
-                       
+                        <div class="form-group">
+                            <label for="password">Password </label>
+                            <input type="password" class="form-control" id="password" name="password" >
+                            <span style="color: red; font-size: small;">Leave blank if you don't want to change password</span>
+                        </div>
                       
                         <div class="form-group">
                             <input type="submit" class="btn btn-primary" id="submit" name="submit" value="Save" required>
