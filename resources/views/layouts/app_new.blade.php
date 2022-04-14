@@ -87,7 +87,7 @@
     class="header-fixed header-mobile-fixed subheader-enabled subheader-fixed aside-enabled aside-fixed aside-minimize-hoverable page-loading">
     <!--begin::Main-->
     <!--begin::Header Mobile-->
-    <div id="kt_header_mobile" class="header-mobile align-items-center header-mobile-fixed">
+    <div id="kt_header_mobile" class="header-mobile align-items-center header-mobile-fixed" style="background-color: white; ">
         <!--begin::Logo-->
         <a href="#">
             {{-- <img alt="Logo" src="{{asset('metch')}}/media/logos/logo-light.png" /> --}}
@@ -156,7 +156,7 @@
                         <!--begin::Copyright-->
                         <div class="text-dark order-2 order-md-1">
                             <span class="text-muted font-weight-bold mr-2">© <?= date('Y'); ?></span>
-                            <a href="#" class="text-dark-75 text-hover-primary">IniqueSolutions</a>
+                            <a href="#" class="text-dark-75 text-hover-primary">Groundhogg</a>
                         </div>
                         <!--end::Copyright-->
                     </div>

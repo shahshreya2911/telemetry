@@ -1,4 +1,10 @@
 @extends('layouts.app_new')
+@section('page-heading', 'Dashboard')
+@section('breadcrumbs')
+    <li class="breadcrumb-item active">
+       Dashboard
+    </li>
+@stop
 @section('content')
 
     <div class="d-flex flex-column-fluid">
