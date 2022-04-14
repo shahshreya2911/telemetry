@@ -30,7 +30,7 @@
                         </div>
                         <div class="form-group">
                             <label for="password">Password </label>
-                            <input type="password" class="form-control" id="password" name="password" value="{{$user->password}}"  required>
+                            <input type="password" class="form-control" id="password" name="password" >
                             <span style="color: red; font-size: small;">Leave blank if you don't want to change password</span>
                         </div>
                         <!-- 
