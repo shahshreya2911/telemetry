@@ -44,27 +44,27 @@
                                     </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="col bg-light-primary px-6 py-8 rounded-xl mb-7">
-                                        <span class="svg-icon svg-icon-3x svg-icon-primary d-block my-2">
-                                            <i class="fa fa-user text-primary" aria-hidden="true"></i>
+                                    <div class="col bg-light-danger px-6 py-8 rounded-xl mb-7">
+                                        <span class="svg-icon svg-icon-3x svg-icon-danger d-block my-2">
+                                            <i class="fa fa-user text-danger" aria-hidden="true"></i>
                                         </span>
-                                        <a href="#" class="text-primary font-weight-bold font-size-h6 mt-2"><b>{{$count_customer}}</b> Customers</a>
+                                        <a href="#" class="text-danger font-weight-bold font-size-h6 mt-2"><b>{{$count_customer}}</b> Customers</a>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="col bg-light-primary px-6 py-8 rounded-xl mb-7">
-                                        <span class="svg-icon svg-icon-3x svg-icon-primary d-block my-2">
-                                            <i class="fa fa-user text-primary" aria-hidden="true"></i>
+                                    <div class="col bg-light-success px-6 py-8 rounded-xl mb-7">
+                                        <span class="svg-icon svg-icon-3x svg-icon-success d-block my-2">
+                                            <i class="fa fa-user text-success" aria-hidden="true"></i>
                                         </span>
-                                        <a href="#" class="text-primary font-weight-bold font-size-h6 mt-2"><b>{{$count_site}}</b> Sites</a>
+                                        <a href="#" class="text-success font-weight-bold font-size-h6 mt-2"><b>{{$count_site}}</b> Sites</a>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="col bg-light-primary px-6 py-8 rounded-xl mb-7">
-                                        <span class="svg-icon svg-icon-3x svg-icon-primary d-block my-2">
-                                            <i class="fa fa-user text-primary" aria-hidden="true"></i>
+                                    <div class="col bg-light-warning px-6 py-8 rounded-xl mb-7">
+                                        <span class="svg-icon svg-icon-3x svg-icon-warning d-block my-2">
+                                            <i class="fa fa-user text-warning" aria-hidden="true"></i>
                                         </span>
-                                        <a href="#" class="text-primary font-weight-bold font-size-h6 mt-2"><b>{{$count_plugins}}</b> Plugins</a>
+                                        <a href="#" class="text-warning font-weight-bold font-size-h6 mt-2"><b>{{$count_plugins}}</b> Plugins</a>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -76,19 +76,19 @@
                                     </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="col bg-light-primary px-6 py-8 rounded-xl mb-7">
-                                        <span class="svg-icon svg-icon-3x svg-icon-primary d-block my-2">
-                                            <i class="fa fa-user text-primary" aria-hidden="true"></i>
+                                    <div class="col bg-light-danger px-6 py-8 rounded-xl mb-7">
+                                        <span class="svg-icon svg-icon-3x svg-icon-danger d-block my-2">
+                                            <i class="fa fa-user text-danger" aria-hidden="true"></i>
                                         </span>
-                                        <a href="#" class="text-primary font-weight-bold font-size-h6 mt-2"><b>{{$count_webhooks}}</b> Webhooks</a>
+                                        <a href="#" class="text-danger font-weight-bold font-size-h6 mt-2"><b>{{$count_webhooks}}</b> Webhooks</a>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="col bg-light-primary px-6 py-8 rounded-xl mb-7">
-                                        <span class="svg-icon svg-icon-3x svg-icon-primary d-block my-2">
-                                            <i class="fa fa-user text-primary" aria-hidden="true"></i>
+                                    <div class="col bg-light-success px-6 py-8 rounded-xl mb-7">
+                                        <span class="svg-icon svg-icon-3x svg-icon-success d-block my-2">
+                                            <i class="fa fa-user text-success" aria-hidden="true"></i>
                                         </span>
-                                        <a href="#" class="text-primary font-weight-bold font-size-h6 mt-2"><b>{{$count_reports}}</b> Reports</a>
+                                        <a href="#" class="text-success font-weight-bold font-size-h6 mt-2"><b>{{$count_reports}}</b> Reports</a>
                                     </div>
                                 </div>
                                
