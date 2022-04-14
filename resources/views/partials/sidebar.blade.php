@@ -1,16 +1,16 @@
-<div class="aside aside-left aside-fixed d-flex flex-column flex-row-auto" id="kt_aside">
+<div class="aside aside-left aside-fixed d-flex flex-column flex-row-auto groundhogg-theme" id="kt_aside">
     <!--begin::Brand-->
-    <div class="brand flex-column-auto" id="kt_brand">
+    <div class="brand flex-column-auto groundhogg-theme" id="kt_brand">
         <!--begin::Logo-->
         <a href="#" class="brand-logo">
             {{-- <img alt="Logo" src="{{asset('metch')}}/media/logos/logo-light.png" /> --}}
             <!-- <span class="text-center"><i class="fab fa-angrycr
                 eative fa-4x"></i></span> -->
-            <img alt="Logo" src="{{asset('assets')}}/image/groundhogg-logo-black.svg" width="100px" />
+            <img alt="Logo" src="{{asset('assets')}}/image/groundhogg-logo-black.svg" width="200px" />
         </a>
         <!--end::Logo-->
         <!--begin::Toggle-->
-        <button class="brand-toggle btn btn-sm px-0" id="kt_aside_toggle">
+        <button class="brand-toggle btn btn-sm px-0 " id="kt_aside_toggle">
             <span class="svg-icon svg-icon svg-icon-xl">
                 <!--begin::Svg Icon | path:/metronic/theme/html/demo1/dist/assets/media/svg/icons/Navigation/Angle-double-left.svg-->
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -27,13 +27,13 @@
     </div>
     <!--end::Brand-->
     <!--begin::Aside Menu-->
-    <div class="aside-menu-wrapper flex-column-fluid" id="kt_aside_menu_wrapper">
+    <div class="aside-menu-wrapper flex-column-fluid groundhogg-theme" id="kt_aside_menu_wrapper">
         <!--begin::Menu Container-->
-        <div id="kt_aside_menu" class="aside-menu my-4" data-menu-vertical="1" data-menu-scroll="1" data-menu-dropdown-timeout="500">
+        <div id="kt_aside_menu" class="aside-menu my-4 groundhogg-theme" data-menu-vertical="1" data-menu-scroll="1" data-menu-dropdown-timeout="500">
             <!--begin::Menu Nav-->
-            <ul class="menu-nav">
-                <li class="menu-item menu-item-active" aria-haspopup="true">
-                    <a href="{{route('dashboard')}}" class="menu-link">
+            <ul class="menu-nav groundhogg-theme">
+                <li class="menu-item menu-item-active " aria-haspopup="true">
+                    <a href="{{route('dashboard')}}" class="menu-link groundhogg-theme">
                         <span class="svg-icon menu-icon">
                         <i class="fa fa-home" aria-hidden="true"></i>
                         </span>
@@ -87,7 +87,7 @@
                         </span>
                         <span class="menu-text">App Settings</span>
                     </a>
-                </li> -->	
+                </li> -->   
             
             </ul>
             <!--end::Menu Nav-->

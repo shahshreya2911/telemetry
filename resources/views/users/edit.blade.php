@@ -1,8 +1,8 @@
 @extends('layouts.app_new')
-@section('page-heading', 'Roles')
+@section('page-heading', 'Users')
 @section('breadcrumbs')
     <li class="breadcrumb-item">
-        <a href="{{ route('roles') }}"> Roles</a>
+        <a href="{{ route('users') }}"> Users</a>
     </li>
     <li class="breadcrumb-item active">
         Edit 
@@ -12,7 +12,7 @@
     <div class="container">
         <div class="card">
             <div class="card-header">
-                <h2>Edit Roles</h2>
+                <h2>Edit User</h2>
             </div>
             <div class="card-body">
                 <div class="col-md-12">

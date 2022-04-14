@@ -38,3 +38,15 @@ body{
     list-style: none;
     border-radius: 0.25rem;
 }
+.groundhogg-theme{
+  background-color: #ff7b01 !important; 
+}
+.groundhogg-theme a{
+  background-color: #ff7b01 !important; 
+}
+.groundhogg-theme i{
+  color: black !important; 
+}
+.groundhogg-theme .menu-text{
+  color: black !important; 
+}

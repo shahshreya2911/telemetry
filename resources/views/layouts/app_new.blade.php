@@ -8,9 +8,9 @@
     <!-- End Google Tag Manager -->
     <meta charset="utf-8" />
     @if(auth()->user()->role == 'admin')
-        <title>{{ config('app.name', 'Groundhogg - Admin Panel ') }}</title>
+        <title>{{ config('app.name', 'Groundhogg') }}  - Admin Panel </title>
     @else 
-        <title>{{ config('app.name', 'Groundhogg - User Panel ') }}</title>
+        <title>{{ config('app.name', 'Groundhogg') }}  - User Panel </title>
     @endif
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
@@ -91,7 +91,8 @@
         <!--begin::Logo-->
         <a href="#">
             {{-- <img alt="Logo" src="{{asset('metch')}}/media/logos/logo-light.png" /> --}}
-            <div class="text-white"><i class="fab fa-angrycreative fa-4x"></i></div>
+            <!-- <div class="text-white"><i class="fab fa-angrycreative fa-4x"></i></div> -->
+            <img alt="Logo" src="{{asset('assets')}}/image/groundhogg-logo-black.svg" width="200px" />
         </a>
         <!--end::Logo-->
         <!--begin::Toolbar-->
