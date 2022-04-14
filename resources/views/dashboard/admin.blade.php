@@ -31,69 +31,69 @@
                             <div id="" class="card-rounded-bottom bg-primary" style="height: 200px"></div>
                             <!--end::Chart-->
                             <!--begin::Stats-->
-                            <div class="card-spacer mt-n25">
+                            <div class="card-spacer mt-n25 dashboard">
 
-                            <div class="container">
-                              <div class="row">
-                                <div class="col-md-3">
-                                    <div class="col bg-light-primary px-6 py-8 rounded-xl mb-7">
-                                        <span class="svg-icon svg-icon-3x svg-icon-primary d-block my-2">
-                                            <i class="fa fa-user text-primary" aria-hidden="true"></i>
-                                        </span>
-                                        <a href="#" class="text-primary font-weight-bold font-size-h6 mt-2"><b>{{$count_user}}</b> Users</a>
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="col bg-light-primary px-6 py-8 rounded-xl mb-7">
+                                            <span class="svg-icon svg-icon-3x svg-icon-primary d-block my-2">
+                                                <i class="fas fa-user-tie text-primary" aria-hidden="true"></i>
+                                            </span>
+                                            <a href="#" class="text-primary font-weight-bold font-size-h6 mt-2"><b>{{$count_user}}</b> Users</a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="col bg-light-danger px-6 py-8 rounded-xl mb-7">
-                                        <span class="svg-icon svg-icon-3x svg-icon-danger d-block my-2">
-                                            <i class="fa fa-user text-danger" aria-hidden="true"></i>
-                                        </span>
-                                        <a href="#" class="text-danger font-weight-bold font-size-h6 mt-2"><b>{{$count_customer}}</b> Customers</a>
+                                    <div class="col-md-3">
+                                        <div class="col bg-light-danger px-6 py-8 rounded-xl mb-7">
+                                            <span class="svg-icon svg-icon-3x svg-icon-danger d-block my-2">
+                                                <i class="fas fa-users text-danger" aria-hidden="true"></i>
+                                            </span>
+                                            <a href="#" class="text-danger font-weight-bold font-size-h6 mt-2"><b>{{$count_customer}}</b> Customers</a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="col bg-light-success px-6 py-8 rounded-xl mb-7">
-                                        <span class="svg-icon svg-icon-3x svg-icon-success d-block my-2">
-                                            <i class="fa fa-user text-success" aria-hidden="true"></i>
-                                        </span>
-                                        <a href="#" class="text-success font-weight-bold font-size-h6 mt-2"><b>{{$count_site}}</b> Sites</a>
+                                    <div class="col-md-3">
+                                        <div class="col bg-light-success px-6 py-8 rounded-xl mb-7">
+                                            <span class="svg-icon svg-icon-3x svg-icon-success d-block my-2">
+                                                <i class="fa fa-desktop text-success" aria-hidden="true"></i>
+                                            </span>
+                                            <a href="#" class="text-success font-weight-bold font-size-h6 mt-2"><b>{{$count_site}}</b> Sites</a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="col bg-light-warning px-6 py-8 rounded-xl mb-7">
-                                        <span class="svg-icon svg-icon-3x svg-icon-warning d-block my-2">
-                                            <i class="fa fa-user text-warning" aria-hidden="true"></i>
-                                        </span>
-                                        <a href="#" class="text-warning font-weight-bold font-size-h6 mt-2"><b>{{$count_plugins}}</b> Plugins</a>
+                                    <div class="col-md-3">
+                                        <div class="col bg-light-warning px-6 py-8 rounded-xl mb-7">
+                                            <span class="svg-icon svg-icon-3x svg-icon-warning d-block my-2">
+                                                <i class="fas fa-qrcode text-warning" aria-hidden="true"></i>
+                                            </span>
+                                            <a href="#" class="text-warning font-weight-bold font-size-h6 mt-2"><b>{{$count_plugins}}</b> Plugins</a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="col bg-light-primary px-6 py-8 rounded-xl mb-7">
-                                        <span class="svg-icon svg-icon-3x svg-icon-primary d-block my-2">
-                                            <i class="fa fa-user text-primary" aria-hidden="true"></i>
-                                        </span>
-                                        <a href="#" class="text-primary font-weight-bold font-size-h6 mt-2"><b>{{$count_events}}</b> Events</a>
+                                    <div class="col-md-3">
+                                        <div class="col bg-light-primary px-6 py-8 rounded-xl mb-7">
+                                            <span class="svg-icon svg-icon-3x svg-icon-primary d-block my-2">
+                                                <i class="far fa-calendar-alt text-primary" aria-hidden="true"></i>
+                                            </span>
+                                            <a href="#" class="text-primary font-weight-bold font-size-h6 mt-2"><b>{{$count_events}}</b> Events</a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="col bg-light-danger px-6 py-8 rounded-xl mb-7">
-                                        <span class="svg-icon svg-icon-3x svg-icon-danger d-block my-2">
-                                            <i class="fa fa-user text-danger" aria-hidden="true"></i>
-                                        </span>
-                                        <a href="#" class="text-danger font-weight-bold font-size-h6 mt-2"><b>{{$count_webhooks}}</b> Webhooks</a>
+                                    <div class="col-md-3">
+                                        <div class="col bg-light-danger px-6 py-8 rounded-xl mb-7">
+                                            <span class="svg-icon svg-icon-3x svg-icon-danger d-block my-2">
+                                                <i class="fas fa-thumbtack text-danger" aria-hidden="true"></i>
+                                            </span>
+                                            <a href="#" class="text-danger font-weight-bold font-size-h6 mt-2"><b>{{$count_webhooks}}</b> Webhooks</a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="col bg-light-success px-6 py-8 rounded-xl mb-7">
-                                        <span class="svg-icon svg-icon-3x svg-icon-success d-block my-2">
-                                            <i class="fa fa-user text-success" aria-hidden="true"></i>
-                                        </span>
-                                        <a href="#" class="text-success font-weight-bold font-size-h6 mt-2"><b>{{$count_reports}}</b> Reports</a>
+                                    <div class="col-md-3">
+                                        <div class="col bg-light-success px-6 py-8 rounded-xl mb-7">
+                                            <span class="svg-icon svg-icon-3x svg-icon-success d-block my-2">
+                                                <i class="fa fa-list-alt text-success" aria-hidden="true"></i>
+                                            </span>
+                                            <a href="#" class="text-success font-weight-bold font-size-h6 mt-2"><b>{{$count_reports}}</b> Reports</a>
+                                        </div>
                                     </div>
+                                   
+                                  </div>
                                 </div>
-                               
-                              </div>
-                            </div>
                     
                                
                             </div>

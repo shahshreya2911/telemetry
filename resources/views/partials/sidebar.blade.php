@@ -60,7 +60,7 @@
                 <li class="menu-item menu-item-active" aria-haspopup="true">
                     <a href="{{route('users')}}" class="menu-link">
                         <span class="svg-icon menu-icon">
-                        <i class="fa fa-list-alt" aria-hidden="true"></i>
+                        <i class="fas fa-user-tie" aria-hidden="true"></i>
                         </span>
                         <span class="menu-text">Manage Users</span>
                     </a>
@@ -69,7 +69,7 @@
                 <li class="menu-item menu-item-active" aria-haspopup="true">
                     <a href="{{route('myprofile')}}" class="menu-link">
                         <span class="svg-icon menu-icon">
-                        <i class="fa fa-list-alt" aria-hidden="true"></i>
+                        <i class="fas fa-user-circle" aria-hidden="true"></i>
                         </span>
                         <span class="menu-text">My Profile </span>
                     </a>
