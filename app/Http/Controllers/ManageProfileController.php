@@ -46,7 +46,7 @@ class ManageProfileController extends Controller
         }
         $data = $data->save();
 
-        return redirect()->route('users')->withSuccess("User Added Successfully.");
+        return redirect()->route('myprofile')->withSuccess("Your changes updated Successfully..");
     }
 
 

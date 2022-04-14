@@ -23,6 +23,8 @@ class HomeController extends Controller
      */
     public function index()
     {
+        return redirect()->route('dashboard');
+        exit; 
         $data = array(
             'count_user' => DB::table('users')->count(),
             'menu'      => 'menu.v_menu_admin',
