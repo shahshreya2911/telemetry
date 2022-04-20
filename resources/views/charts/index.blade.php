@@ -15,19 +15,19 @@
             </div>
             <div class="card-body">
                 <div class="col-md-12">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <h3>Line Chart</h3>
                         <div id="chartContainer_linechart" style="height: 370px; width: 100%;"></div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <h3>Area Chart</h3>
                         <div id="chartContainer_areachart" style="height: 370px; width: 100%;"></div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <h3>Pie Chart</h3>
                         <div id="chartContainer_piechart" style="height: 370px; width: 100%;"></div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <h3>Pyramid Chart</h3>
                         <div id="chartContainer_pyramidchart" style="height: 370px; width: 100%;"></div>
                     </div>
