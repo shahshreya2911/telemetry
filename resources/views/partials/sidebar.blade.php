@@ -67,6 +67,14 @@
                 </li>
                 @endif
                 <li class="menu-item menu-item-active" aria-haspopup="true">
+                    <a href="{{route('charts')}}" class="menu-link">
+                        <span class="svg-icon menu-icon">
+                        <i class="fa fa-line-chart" aria-hidden="true"></i>
+                        </span>
+                        <span class="menu-text">Charts </span>
+                    </a>
+                </li>
+                <li class="menu-item menu-item-active" aria-haspopup="true">
                     <a href="{{route('myprofile')}}" class="menu-link">
                         <span class="svg-icon menu-icon">
                         <i class="fas fa-user-circle" aria-hidden="true"></i>

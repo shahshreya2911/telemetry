@@ -24,8 +24,10 @@ class TestController extends Controller
      */
     public function index()
     {
-        echo 'test'; 
 
+        return view('test');
+        exit; 
+        echo 'test'; 
         $users = Users::get(); 
         print_r($users); 
 

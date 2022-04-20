@@ -9,7 +9,9 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ManageRolesController;
 use App\Http\Controllers\ManageUsersController;
 use App\Http\Controllers\ManageProfileController;
+use App\Http\Controllers\ManageChartsController;
 use App\Http\Controllers\TestController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -68,6 +70,7 @@ Route::group([ 'middleware' => [ 'Admin' ]], function () {
 Route::get('/myprofile', [ManageProfileController::class, 'index'])->name('myprofile');
 Route::post('myprofile/update', [ManageProfileController::class, 'update'])->name('myprofile.update');
 
+Route::get('/charts', [ManageChartsController::class, 'index'])->name('charts');
 
 // Route::get('/user.get_data',[UserController::class, 'get_data'])->name('get_data');
 
