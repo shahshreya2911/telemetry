@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'b4d8dcad562fd5e8fd1f5362302a129a87279df3',
+        'reference' => '836de457fa6f842f65c7704cc36445d71bb27eed',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -26,6 +26,24 @@
             'install_path' => __DIR__ . '/../brick/math',
             'aliases' => array(),
             'reference' => 'ca57d18f028f84f777b2168cd1911b0dee2343ae',
+            'dev_requirement' => false,
+        ),
+        'chartisan/php' => array(
+            'pretty_version' => '1.2.1',
+            'version' => '1.2.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../chartisan/php',
+            'aliases' => array(),
+            'reference' => '85d2352077800e9bcb411aec1ff7e4d23eef93a1',
+            'dev_requirement' => false,
+        ),
+        'consoletvs/charts' => array(
+            'pretty_version' => '7.3.0',
+            'version' => '7.3.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../consoletvs/charts',
+            'aliases' => array(),
+            'reference' => 'b6c47dedeebf95c690f3604355ddb002677b6ae6',
             'dev_requirement' => false,
         ),
         'cordoval/hamcrest-php' => array(
@@ -427,7 +445,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'b4d8dcad562fd5e8fd1f5362302a129a87279df3',
+            'reference' => '836de457fa6f842f65c7704cc36445d71bb27eed',
             'dev_requirement' => false,
         ),
         'laravel/sail' => array(
@@ -802,8 +820,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0',
-                1 => '1.0.0 || 2.0.0 || 3.0.0',
+                0 => '1.0.0 || 2.0.0 || 3.0.0',
+                1 => '1.0|2.0',
             ),
         ),
         'psr/simple-cache' => array(
