@@ -19,19 +19,18 @@
                     <div class="col-md-8 chart_data">
                         <h3>Bar Chart</h3>
                         <canvas id="canvas" width="100%"></canvas>
-                      <!--   <div id="chartContainer_barchart" style="height: 370px; width: 100%;"></div> -->
                     </div>
                     <div class="col-md-8 chart_data">
-                        <h3>Area Chart</h3>
-                        <div id="chartContainer_areachart" style="height: 370px; width: 100%;"></div>
+                        <h3>Line Chart</h3>
+                        <canvas id="canvas_linechart" height="280" width="600"></canvas>
                     </div>
                     <div class="col-md-8 chart_data">
                         <h3>Pie Chart</h3>
-                        <div id="chartContainer_piechart" style="height: 370px; width: 100%;"></div>
+                        <canvas id="canvas_piechart" height="280" width="600"></canvas>
                     </div>
                     <div class="col-md-8 chart_data">
-                        <h3>Pyramid Chart</h3>
-                        <div id="chartContainer_pyramidchart" style="height: 370px; width: 100%;"></div>
+                        <h3>Polar Area Chart</h3>
+                        <canvas id="canvas_polarchart" height="280" width="600"></canvas>
                     </div>
                 </div>
             </div>
@@ -56,9 +55,74 @@
     };
 
     window.onload = function() {
+
+        ///////////////// Bar chart 
         var ctx = document.getElementById("canvas").getContext("2d");
         window.myBar = new Chart(ctx, {
             type: 'bar',
+            data: barChartData,
+            options: {
+                elements: {
+                    rectangle: {
+                        borderWidth: 2,
+                        borderColor: '#c1c1c1',
+                        borderSkipped: 'bottom'
+                    }
+                },
+                responsive: true,
+                title: {
+                    display: true,
+                    text: 'Yearly User Joined'
+                }
+            }
+        });
+
+        ///////////////// Line  chart 
+        var ctx = document.getElementById("canvas_linechart").getContext("2d");
+        window.myBar = new Chart(ctx, {
+            type: 'line',
+            data: barChartData,
+            options: {
+                elements: {
+                    rectangle: {
+                        borderWidth: 2,
+                        borderColor: '#c1c1c1',
+                        borderSkipped: 'bottom'
+                    }
+                },
+                responsive: true,
+                title: {
+                    display: true,
+                    text: 'Yearly User Joined'
+                }
+            }
+        });
+
+        ///////////////// Pie chart 
+        var ctx = document.getElementById("canvas_piechart").getContext("2d");
+        window.myBar = new Chart(ctx, {
+            type: 'pie',
+            data: barChartData,
+            options: {
+                elements: {
+                    rectangle: {
+                        borderWidth: 2,
+                        borderColor: '#c1c1c1',
+                        borderSkipped: 'bottom'
+                    }
+                },
+                responsive: true,
+                title: {
+                    display: true,
+                    text: 'Yearly User Joined'
+                }
+            }
+        });
+
+        ///////////////// Pyramid chart 
+        var ctx = document.getElementById("canvas_polarchart").getContext("2d");
+        window.myBar = new Chart(ctx, {
+            type: 'polarArea',
             data: barChartData,
             options: {
                 elements: {
