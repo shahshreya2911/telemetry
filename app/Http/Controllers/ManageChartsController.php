@@ -23,7 +23,7 @@ class ManageChartsController extends Controller
     public function index(Request $request)
     {
         // echo url('/');exit;
-         
+        // static chart
         $data = []; 
         return view('charts.index',compact('data'));
     }

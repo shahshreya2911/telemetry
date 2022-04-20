@@ -69,7 +69,7 @@ Route::group([ 'middleware' => [ 'Admin' ]], function () {
 
 Route::get('/myprofile', [ManageProfileController::class, 'index'])->name('myprofile');
 Route::post('myprofile/update', [ManageProfileController::class, 'update'])->name('myprofile.update');
-
+// chart 
 Route::get('/charts', [ManageChartsController::class, 'index'])->name('charts');
 
 

@@ -3,6 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
+        <!-- chart here  -->
         <div class="col-md-6">
             <h3>Line Chart</h3>
             <div id="chartContainer_linechart" style="height: 370px; width: 100%;"></div>

@@ -71,7 +71,7 @@
                         <span class="svg-icon menu-icon">
                         <i class="fa fa-line-chart" aria-hidden="true"></i>
                         </span>
-                        <span class="menu-text">Charts </span>
+                        <span class="menu-text">Charts  </span>
                     </a>
                 </li>
                 <li class="menu-item menu-item-active" aria-haspopup="true">

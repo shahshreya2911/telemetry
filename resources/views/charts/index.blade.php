@@ -15,6 +15,7 @@
             </div>
             <div class="card-body">
                 <div class="row">
+                    <!-- chart data -->
                     <div class="col-md-12">
                         <h3>Line Chart</h3>
                         <div id="chartContainer_linechart" style="height: 370px; width: 100%;"></div>
