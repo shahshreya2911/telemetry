@@ -24,7 +24,7 @@ class TestController extends Controller
      */
     public function index()
     {
-
+        // test page 
         return view('test');
         exit; 
         echo 'test'; 

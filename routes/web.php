@@ -72,6 +72,8 @@ Route::post('myprofile/update', [ManageProfileController::class, 'update'])->nam
 
 Route::get('/charts', [ManageChartsController::class, 'index'])->name('charts');
 
+
+////////// Original user routes
 // Route::get('/user.get_data',[UserController::class, 'get_data'])->name('get_data');
 
 // Route::resource('users', UsersController::class);

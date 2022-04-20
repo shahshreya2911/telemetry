@@ -14,7 +14,7 @@
                 <h2>My Profile</h2>
             </div>
             <div class="card-body">
-                <div class="col-md-12">
+                <div class="row">
                     <div class="col-md-12">
                         <h3>Line Chart</h3>
                         <div id="chartContainer_linechart" style="height: 370px; width: 100%;"></div>
