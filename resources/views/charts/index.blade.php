@@ -45,11 +45,13 @@
 <script>
     var year = <?php echo $year; ?>;
     var user = <?php echo $user; ?>;
+    var color = <?php echo $color; ?>;
+
     var barChartData = {
         labels: year,
         datasets: [{
             label: 'User',
-            backgroundColor: "pink",
+            backgroundColor: color,
             data: user
         }]
     };
@@ -65,7 +67,6 @@
                 elements: {
                     rectangle: {
                         borderWidth: 2,
-                        borderColor: '#c1c1c1',
                         borderSkipped: 'bottom'
                     }
                 },
@@ -82,20 +83,6 @@
         window.myBar = new Chart(ctx, {
             type: 'line',
             data: barChartData,
-            options: {
-                elements: {
-                    rectangle: {
-                        borderWidth: 2,
-                        borderColor: '#c1c1c1',
-                        borderSkipped: 'bottom'
-                    }
-                },
-                responsive: true,
-                title: {
-                    display: true,
-                    text: 'Yearly User Joined'
-                }
-            }
         });
 
         ///////////////// Pie chart 
@@ -104,13 +91,6 @@
             type: 'pie',
             data: barChartData,
             options: {
-                elements: {
-                    rectangle: {
-                        borderWidth: 2,
-                        borderColor: '#c1c1c1',
-                        borderSkipped: 'bottom'
-                    }
-                },
                 responsive: true,
                 title: {
                     display: true,
@@ -125,13 +105,6 @@
             type: 'polarArea',
             data: barChartData,
             options: {
-                elements: {
-                    rectangle: {
-                        borderWidth: 2,
-                        borderColor: '#c1c1c1',
-                        borderSkipped: 'bottom'
-                    }
-                },
                 responsive: true,
                 title: {
                     display: true,
