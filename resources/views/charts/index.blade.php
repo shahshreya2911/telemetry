@@ -106,7 +106,7 @@ $dataPoints_pyramidchart = array(
 <script>
 window.onload = function () {
  
-var chart = new CanvasJS.Chart("chartContainer", {
+var chart = new CanvasJS.Chart("chartContainer_barchart", {
     animationEnabled: true,
     exportEnabled: true,
     theme: "light1", // "light1", "light2", "dark1", "dark2"
@@ -121,7 +121,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
         //indexLabel: "{y}", //Shows y value on all Data Points
         indexLabelFontColor: "#5A5757",
         indexLabelPlacement: "outside",   
-        dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
+        dataPoints: <?php echo json_encode($dataPoints_barchart, JSON_NUMERIC_CHECK); ?>
     }]
 });
 chart.render();
