@@ -18,7 +18,7 @@
                     <!-- chart data -->
                     <div class="col-md-8 chart_data">
                         <h3>Bar Chart</h3>
-                        <canvas id="canvas" height="280" width="100%"></canvas>
+                        <canvas id="canvas" width="100%"></canvas>
                       <!--   <div id="chartContainer_barchart" style="height: 370px; width: 100%;"></div> -->
                     </div>
                     <div class="col-md-8 chart_data">
