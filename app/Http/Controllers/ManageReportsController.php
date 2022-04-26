@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DataTables;
 use App\Models\User;
-use App\Models\Customers;
+use App\Models\Reports;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 // use App\Http\Controllers\Validator; 
@@ -23,8 +23,8 @@ class ManageReportsController extends Controller
     public function index(Request $request)
     {
         // echo 'customer page '; exit; 
-        $customers = Customers::get(); 
-        return view('customers.index',compact('customers'));
+        $reports = Reports::get(); 
+        return view('reports.index',compact('reports'));
     }
 
 }

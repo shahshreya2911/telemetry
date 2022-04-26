@@ -22,7 +22,7 @@ class ManageSitesController extends Controller
 
     public function index(Request $request)
     {
-        // echo 'customer page '; exit; 
+        // echo 'sites page '; exit; 
         $sites = Sites::get(); 
         return view('sites.index',compact('sites'));
     }

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DataTables;
 use App\Models\User;
-use App\Models\Customers;
+use App\Models\Events;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 // use App\Http\Controllers\Validator; 
@@ -23,8 +23,8 @@ class ManageEventsController extends Controller
     public function index(Request $request)
     {
         // echo 'customer page '; exit; 
-        $customers = Customers::get(); 
-        return view('customers.index',compact('customers'));
+        $events = Events::get(); 
+        return view('events.index',compact('events'));
     }
 
 }

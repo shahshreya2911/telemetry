@@ -38,7 +38,7 @@
                                             <span class="svg-icon svg-icon-3x svg-icon-primary d-block my-2">
                                                 <i class="fas fa-user-tie text-primary" aria-hidden="true"></i>
                                             </span>
-                                            <a href="#" class="text-primary font-weight-bold font-size-h6 mt-2"><b>{{$count_user}}</b> Users</a>
+                                            <a href="{{route('users')}}" class="text-primary font-weight-bold font-size-h6 mt-2"><b>{{$count_user}}</b> Users</a>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
@@ -46,7 +46,7 @@
                                             <span class="svg-icon svg-icon-3x svg-icon-danger d-block my-2">
                                                 <i class="fas fa-users text-danger" aria-hidden="true"></i>
                                             </span>
-                                            <a href="#" class="text-danger font-weight-bold font-size-h6 mt-2"><b>{{$count_customer}}</b> Customers</a>
+                                            <a href="{{route('customers')}}" class="text-danger font-weight-bold font-size-h6 mt-2"><b>{{$count_customer}}</b> Customers</a>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
@@ -54,7 +54,7 @@
                                             <span class="svg-icon svg-icon-3x svg-icon-success d-block my-2">
                                                 <i class="fa fa-desktop text-success" aria-hidden="true"></i>
                                             </span>
-                                            <a href="#" class="text-success font-weight-bold font-size-h6 mt-2"><b>{{$count_site}}</b> Sites</a>
+                                            <a href="{{route('sites')}}" class="text-success font-weight-bold font-size-h6 mt-2"><b>{{$count_site}}</b> Sites</a>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
@@ -62,7 +62,7 @@
                                             <span class="svg-icon svg-icon-3x svg-icon-warning d-block my-2">
                                                 <i class="fas fa-qrcode text-warning" aria-hidden="true"></i>
                                             </span>
-                                            <a href="#" class="text-warning font-weight-bold font-size-h6 mt-2"><b>{{$count_plugins}}</b> Plugins</a>
+                                            <a href="{{route('plugins')}}" class="text-warning font-weight-bold font-size-h6 mt-2"><b>{{$count_plugins}}</b> Plugins</a>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
@@ -70,7 +70,7 @@
                                             <span class="svg-icon svg-icon-3x svg-icon-primary d-block my-2">
                                                 <i class="far fa-calendar-alt text-primary" aria-hidden="true"></i>
                                             </span>
-                                            <a href="#" class="text-primary font-weight-bold font-size-h6 mt-2"><b>{{$count_events}}</b> Events</a>
+                                            <a href="{{route('events')}}" class="text-primary font-weight-bold font-size-h6 mt-2"><b>{{$count_events}}</b> Events</a>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
@@ -78,7 +78,7 @@
                                             <span class="svg-icon svg-icon-3x svg-icon-danger d-block my-2">
                                                 <i class="fas fa-thumbtack text-danger" aria-hidden="true"></i>
                                             </span>
-                                            <a href="#" class="text-danger font-weight-bold font-size-h6 mt-2"><b>{{$count_webhooks}}</b> Webhooks</a>
+                                            <a href="{{route('webhooks')}}" class="text-danger font-weight-bold font-size-h6 mt-2"><b>{{$count_webhooks}}</b> Webhooks</a>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
@@ -86,7 +86,7 @@
                                             <span class="svg-icon svg-icon-3x svg-icon-success d-block my-2">
                                                 <i class="fa fa-list-alt text-success" aria-hidden="true"></i>
                                             </span>
-                                            <a href="#" class="text-success font-weight-bold font-size-h6 mt-2"><b>{{$count_reports}}</b> Reports</a>
+                                            <a href="{{route('reports')}}" class="text-success font-weight-bold font-size-h6 mt-2"><b>{{$count_reports}}</b> Reports</a>
                                         </div>
                                     </div>
                                    

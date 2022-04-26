@@ -38,7 +38,7 @@
                                 @foreach($sites as $row)
                                     <tr>
                                         <td>{{$loop->iteration}}</td>
-                                        <td>{{$row->sites}}</td>
+                                        <td>{{$row->site_key}}</td>
                                         <td>{{$row->wp_version}}</td>
                                         <td>{{$row->host}}</td>
                                         <td>{{$row->active_plugins}}</td>

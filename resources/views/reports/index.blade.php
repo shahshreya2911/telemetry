@@ -1,8 +1,8 @@
 @extends('layouts.app_new')
-@section('page-heading', 'Customers')
+@section('page-heading', 'Reports')
 @section('breadcrumbs')
     <li class="breadcrumb-item active">
-       Customers
+       Reports
     </li>
 @stop
 
@@ -11,7 +11,7 @@
     <div class="container">
         <div class="card">
             <div class="card-header">
-                <h2>Customers</h2>
+                <h2>Reports</h2>
                 <!-- <div class="d-flex flex-row-reverse">
                     <a href="{{ route('users.create')}}" class="btn btn-sm btn-pill btn-outline-primary font-weight-bolder" > <i class="fas fa-plus"></i>Add User  </a>
                 </div> -->
@@ -24,23 +24,17 @@
                                 <tr>
                                     <th>Sr. No. </th>
                                     <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Plan</th>
-                                    <th>License</th>
-                                    <th>Created Date </th>
-                                    <th>Last Heard From</th>
+                                    <th>Report Query</th>
+                                    <th>Type</th>
                                 </tr>
                             </thead>
                             <tbody class="text-center">
-                                @foreach($customers as $row)
+                                @foreach($reports as $row)
                                     <tr>
                                         <td>{{$loop->iteration}}</td>
                                         <td>{{$row->name}}</td>
-                                        <td>{{$row->email}}</td>
-                                        <td>{{$row->plan}}</td>
-                                        <td>{{$row->license}}</td>
-                                        <td>{{$row->date_created}}</td>
-                                        <td>{{$row->last_heard_from}}</td>
+                                        <td>{{$row->report_query}}</td>
+                                        <td>{{$row->type}}</td>
                                     </tr>
                                 @endforeach
                             </tbody>
