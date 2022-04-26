@@ -29,7 +29,7 @@
                                 </tr>
                             </thead>
                             <tbody class="text-center">
-                                @foreach($users as $row)
+                                @foreach($customers as $row)
                                     <tr>
                                         <td>{{$loop->iteration}}</td>
                                         <td>{{$row->name}}</td>
