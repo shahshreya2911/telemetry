@@ -22,7 +22,7 @@ class ManagePluginsController extends Controller
 
     public function index(Request $request)
     {
-        echo 'plugins page '; exit; 
+        // echo 'plugins page '; exit; 
         $plugins = Plugins::get(); 
         return view('plugins.index',compact('plugins'));
     }
