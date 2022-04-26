@@ -10,6 +10,12 @@ use App\Http\Controllers\ManageRolesController;
 use App\Http\Controllers\ManageUsersController;
 use App\Http\Controllers\ManageProfileController;
 use App\Http\Controllers\ManageChartsController;
+use App\Http\Controllers\ManageCustomersController;
+use App\Http\Controllers\ManageSitesController;
+use App\Http\Controllers\ManagePluginsController;
+use App\Http\Controllers\ManageEventsController;
+use App\Http\Controllers\ManageWebhooksController;
+use App\Http\Controllers\ManageReportsController;
 use App\Http\Controllers\TestController;
 
 /*
@@ -71,6 +77,21 @@ Route::get('/myprofile', [ManageProfileController::class, 'index'])->name('mypro
 Route::post('myprofile/update', [ManageProfileController::class, 'update'])->name('myprofile.update');
 // chart 
 Route::get('/charts', [ManageChartsController::class, 'index'])->name('charts');
+
+Route::get('/customers', [ManageCustomersController::class, 'index'])->name('customers');
+Route::get('/sites', [ManageSitesController::class, 'index'])->name('sites');
+Route::get('/plugins', [ManagePluginsController::class, 'index'])->name('plugins');
+Route::get('/events', [ManageEventsController::class, 'index'])->name('events');
+Route::get('/webhooks', [ManageWebhooksController::class, 'index'])->name('webhooks');
+Route::get('/reports', [ManageReportsController::class, 'index'])->name('reports');
+
+
+
+
+
+
+
+
 
 
 ////////// Original user routes
