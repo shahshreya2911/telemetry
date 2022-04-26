@@ -22,7 +22,7 @@ class ManageReportsController extends Controller
 
     public function index(Request $request)
     {
-        // echo 'customer page '; exit; 
+        // echo 'reports page '; exit; 
         $reports = Reports::get(); 
         return view('reports.index',compact('reports'));
     }

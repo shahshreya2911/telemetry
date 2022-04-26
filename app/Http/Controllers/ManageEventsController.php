@@ -22,7 +22,7 @@ class ManageEventsController extends Controller
 
     public function index(Request $request)
     {
-        // echo 'customer page '; exit; 
+        // echo 'events page '; exit; 
         $events = Events::get(); 
         return view('events.index',compact('events'));
     }

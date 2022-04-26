@@ -89,11 +89,6 @@ Route::get('/reports', [ManageReportsController::class, 'index'])->name('reports
 
 
 
-
-
-
-
-
 ////////// Original user routes
 // Route::get('/user.get_data',[UserController::class, 'get_data'])->name('get_data');
 

@@ -22,10 +22,8 @@ class ManageWebhooksController extends Controller
 
     public function index(Request $request)
     {
-        // echo 'customer page '; exit; 
+        // echo 'webhook page '; exit; 
         $webhooks = Webhooks::get(); 
         return view('webhooks.index',compact('webhooks'));
     }
-
 }
-    
