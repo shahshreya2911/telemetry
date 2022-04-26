@@ -1,8 +1,8 @@
 @extends('layouts.app_new')
-@section('page-heading', 'Customers')
+@section('page-heading', 'Plugins')
 @section('breadcrumbs')
     <li class="breadcrumb-item active">
-       Customers
+       Plugins
     </li>
 @stop
 
@@ -11,7 +11,7 @@
     <div class="container">
         <div class="card">
             <div class="card-header">
-                <h2>Customers</h2>
+                <h2>Plugins</h2>
                 <!-- <div class="d-flex flex-row-reverse">
                     <a href="{{ route('users.create')}}" class="btn btn-sm btn-pill btn-outline-primary font-weight-bolder" > <i class="fas fa-plus"></i>Add User  </a>
                 </div> -->
@@ -23,24 +23,26 @@
                             <thead class="font-weight-bold text-center">
                                 <tr>
                                     <th>Sr. No. </th>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Plan</th>
-                                    <th>License</th>
-                                    <th>Created Date </th>
-                                    <th>Last Heard From</th>
+                                    <th>Slug</th>
+                                    <th>Active</th>
+                                    <th>Inactive</th>
+                                    <th>Installed</th>
+                                    <th>Cached Active </th>
+                                    <th>Cached Inactive</th>
+                                    <th>Cached Installed</th>
                                 </tr>
                             </thead>
                             <tbody class="text-center">
-                                @foreach($customers as $row)
+                                @foreach($plugins as $row)
                                     <tr>
                                         <td>{{$loop->iteration}}</td>
-                                        <td>{{$row->name}}</td>
-                                        <td>{{$row->email}}</td>
-                                        <td>{{$row->plan}}</td>
-                                        <td>{{$row->license}}</td>
-                                        <td>{{$row->date_created}}</td>
-                                        <td>{{$row->last_heard_from}}</td>
+                                        <td>{{$row->slug}}</td>
+                                        <td>{{$row->active}}</td>
+                                        <td>{{$row->inactive}}</td>
+                                        <td>{{$row->installed}}</td>
+                                        <td>{{$row->cached_active}}</td>
+                                        <td>{{$row->cached_inactive}}</td>
+                                        <td>{{$row->cached_installed}}</td>
                                     </tr>
                                 @endforeach
                             </tbody>

@@ -1,8 +1,8 @@
 @extends('layouts.app_new')
-@section('page-heading', 'Customers')
+@section('page-heading', 'Sites')
 @section('breadcrumbs')
     <li class="breadcrumb-item active">
-       Customers
+       Sites
     </li>
 @stop
 
@@ -11,7 +11,7 @@
     <div class="container">
         <div class="card">
             <div class="card-header">
-                <h2>Customers</h2>
+                <h2>Sites</h2>
                 <!-- <div class="d-flex flex-row-reverse">
                     <a href="{{ route('users.create')}}" class="btn btn-sm btn-pill btn-outline-primary font-weight-bolder" > <i class="fas fa-plus"></i>Add User  </a>
                 </div> -->
@@ -23,23 +23,29 @@
                             <thead class="font-weight-bold text-center">
                                 <tr>
                                     <th>Sr. No. </th>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Plan</th>
-                                    <th>License</th>
-                                    <th>Created Date </th>
+                                    <th>Site Key</th>
+                                    <th>WP version</th>
+                                    <th>Host</th>
+                                    <th>Active Plugins</th>
+                                    <th>Inactive Plugins</th>
+                                    <th>Installed Plugins</th>
+                                    <th>IP Address</th>
+                                    <th>Date Activated</th>
                                     <th>Last Heard From</th>
                                 </tr>
                             </thead>
                             <tbody class="text-center">
-                                @foreach($customers as $row)
+                                @foreach($sites as $row)
                                     <tr>
                                         <td>{{$loop->iteration}}</td>
-                                        <td>{{$row->name}}</td>
-                                        <td>{{$row->email}}</td>
-                                        <td>{{$row->plan}}</td>
-                                        <td>{{$row->license}}</td>
-                                        <td>{{$row->date_created}}</td>
+                                        <td>{{$row->sites}}</td>
+                                        <td>{{$row->wp_version}}</td>
+                                        <td>{{$row->host}}</td>
+                                        <td>{{$row->active_plugins}}</td>
+                                        <td>{{$row->inactive_plugins}}</td>
+                                        <td>{{$row->installed_plugins}}</td>
+                                        <td>{{$row->ip_address}}</td>
+                                        <td>{{$row->date_activated}}</td>
                                         <td>{{$row->last_heard_from}}</td>
                                     </tr>
                                 @endforeach
@@ -56,16 +62,10 @@
 @push('scripts')
 <script>
     $('document').ready(function () {
-
-
         // table serverside
         var table = $('#tableUser').DataTable({
-          
         });
-
-
     });
-
 </script>
 @endpush
 
