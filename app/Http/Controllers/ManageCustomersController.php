@@ -22,6 +22,7 @@ class ManageCustomersController extends Controller
 
     public function index(Request $request)
     {
+        echo 'customer page '; exit; 
         $customers = Customers::get(); 
         return view('customers.index',compact('customers'));
     }
