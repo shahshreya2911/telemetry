@@ -23,6 +23,13 @@ class ManageChartsController extends Controller
     public function index(Request $request)
     {
         $marchData = User::get();
+
+        foreach ($marchData as $key => $value) {
+            echo '<br> '; 
+            echo $epoch = $value->created_at;
+            // $dt = new DateTime("@$epoch");  // convert UNIX timestamp to PHP DateTime
+            // echo $dt->format('Y-m-d H:i:s'); // output = 2017-01-01 00:00:00
+        }
         echo "<pre>"; 
         print_r($marchData);  
         exit; 
