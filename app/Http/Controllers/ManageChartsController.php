@@ -25,9 +25,10 @@ class ManageChartsController extends Controller
 
         $year = ['2015','2016','2017','2018','2019','2020'];
         $user = ['25','12','44','20','2','37'];
+        $user2 = ['28','5','37','25','10','30'];
         $color = ['#ffcccc','#ffffcc','#ccf2ff','#ffd9cc','#e6ccff','#f2ffcc'];
 
-        return view('charts.index')->with('year',json_encode($year,JSON_NUMERIC_CHECK))->with('user',json_encode($user,JSON_NUMERIC_CHECK))->with('color',json_encode($color,JSON_NUMERIC_CHECK));
+        return view('charts.index')->with('year',json_encode($year,JSON_NUMERIC_CHECK))->with('user',json_encode($user,JSON_NUMERIC_CHECK))->with('user2',json_encode($user2,JSON_NUMERIC_CHECK))->with('color',json_encode($color,JSON_NUMERIC_CHECK));
     }
 
 }
