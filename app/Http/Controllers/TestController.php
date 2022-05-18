@@ -28,32 +28,26 @@ class TestController extends Controller
 
         $year = ['2015','2016','2017','2018','2019','2020'];
         $user = ['25','12','44','20','2','37'];
+        $user2 = ['28','5','37','25','10','30'];
         $color = ['#ffcccc','#ffffcc','#ccf2ff','#ffd9cc','#e6ccff','#f2ffcc'];
-        return view('test')->with('year',json_encode($year,JSON_NUMERIC_CHECK))->with('user',json_encode($user,JSON_NUMERIC_CHECK))->with('color',json_encode($color,JSON_NUMERIC_CHECK));
+        return view('test')->with('year',json_encode($year,JSON_NUMERIC_CHECK))->with('user',json_encode($user,JSON_NUMERIC_CHECK))->with('user2',json_encode($user2,JSON_NUMERIC_CHECK))->with('color',json_encode($color,JSON_NUMERIC_CHECK));
 
         exit; 
 
+    }
 
-        $data = [['label'=>'Monday', 'data'=>3], ['label'=>'Tuesday', 'data'=>50], ['label'=>'Wednesday', 'data'=>12], ['label'=>'Thrusday', 'data'=>8], ['label'=>'Friday', 'data'=>18], ['label'=>'Satuerday', 'data'=>25], ['label'=>'Sunday', 'data'=>15]]; 
+    public function linechart()
+    {   
+        // echo 'sdadasd'; 
+        // exit; /
 
-        $data['chart_data'] = json_encode($data);
-        return view('test', $data);
-        exit; 
-        return view('test',compact('chart'));
+        $year = ['2015','2016','2017','2018','2019','2020'];
+        $user = ['25','12','44','20','2','37'];
+        $user2 = ['28','5','37','25','10','30'];
+        $color = ['#ffcccc','#ffffcc','#ccf2ff','#ffd9cc','#e6ccff','#f2ffcc'];
+        return view('test-linechart')->with('year',json_encode($year,JSON_NUMERIC_CHECK))->with('user',json_encode($user,JSON_NUMERIC_CHECK))->with('user2',json_encode($user2,JSON_NUMERIC_CHECK))->with('color',json_encode($color,JSON_NUMERIC_CHECK));
 
-        exit; 
-        return view('test');
-        exit; 
-        echo 'test'; 
-        $users = Users::get(); 
-        print_r($users); 
+        // exit; 
 
-        exit; 
-        $data = array(
-            'count_user' => DB::table('users')->count(),
-            'menu'      => 'menu.v_menu_admin',
-            'content' => 'content.view_dashboard'
-        );
-        return view('layouts.v_template',$data);
     }
 }

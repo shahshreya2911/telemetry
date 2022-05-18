@@ -29,6 +29,7 @@ use App\Http\Controllers\TestController;
 |
 */
 Route::get('/test', [TestController::class, 'index'])->name('test');
+Route::get('/test-linechart', [TestController::class, 'linechart'])->name('test-linechart');
 
 Route::get('/', function () {
     // return redirect()->action([HomeController::class, 'index']);

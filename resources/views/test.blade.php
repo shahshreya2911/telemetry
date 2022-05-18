@@ -31,14 +31,22 @@
 <script>
     var year = <?php echo $year; ?>;
     var user = <?php echo $user; ?>;
+    var user2 = <?php echo $user2; ?>;
     var color = <?php echo $color; ?>;
 
     var barChartData = {
         labels: year,
         datasets: [{
-            label: 'User',
-            backgroundColor: color,
-            data: user
+          label: 'My First dataset',
+          backgroundColor: 'green',
+          borderColor: 'green',
+          data: user,
+        },
+        {
+          label: 'My Second dataset',
+          backgroundColor: 'red',
+          borderColor: 'red',
+          data: user2,
         }]
     };
 
@@ -51,10 +59,7 @@
             data: barChartData,
             options: {
                 elements: {
-                    rectangle: {
-                        borderWidth: 2,
-                        borderSkipped: 'bottom'
-                    }
+                        
                 },
                 responsive: true,
                 title: {
@@ -69,6 +74,13 @@
         window.myBar = new Chart(ctx, {
             type: 'line',
             data: barChartData,
+            options: {
+                responsive: true,
+                title: {
+                    display: true,
+                    text: 'Yearly User Joined'
+                }
+            }
         });
 
         ///////////////// Pie chart 
