@@ -22,6 +22,8 @@ class ManageChartsController extends Controller
 
     public function index(Request $request)
     {
+        $marchData = User::get(); 
+        exit; 
 
         $year = ['2015','2016','2017','2018','2019','2020'];
         $user = ['25','12','44','20','2','37'];
