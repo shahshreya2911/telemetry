@@ -27,7 +27,8 @@
 
 @endsection
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
     var year = <?php echo $year; ?>;
     var user = <?php echo $user; ?>;
@@ -37,13 +38,13 @@
     var barChartData = {
         labels: year,
         datasets: [{
-          label: 'My First dataset',
-          backgroundColor: 'green',
-          borderColor: 'green',
+          label: 'March Data',
+          backgroundColor: 'blue',
+          borderColor: 'blue',
           data: user,
         },
         {
-          label: 'My Second dataset',
+          label: 'April Data',
           backgroundColor: 'red',
           borderColor: 'red',
           data: user2,
@@ -82,6 +83,7 @@
                 }
             }
         });
+
 
         ///////////////// Pie chart 
         var ctx = document.getElementById("canvas_piechart").getContext("2d");
