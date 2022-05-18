@@ -23,6 +23,7 @@ class ManageChartsController extends Controller
     public function index(Request $request)
     {
         $marchData = User::get();
+        echo "<pre>"; 
         print_r($marchData);  
         exit; 
 
