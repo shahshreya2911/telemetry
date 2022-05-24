@@ -47,21 +47,26 @@
     var year = <?php echo $year; ?>;
     var user = <?php echo $user; ?>;
     var user2 = <?php echo $user2; ?>;
+
+    var days = <?php echo $days; ?>;
+    var marchAllData = <?php echo $marchAllData; ?>;
+    var aprAllData = <?php echo $aprAllData; ?>;
+
     var color = <?php echo $color; ?>;
 
     var barChartData = {
-        labels: year,
+        labels: days,
         datasets: [{
           label: 'March Data',
           backgroundColor: '#EB984E',
           borderColor: '#EB984E',
-          data: user,
+          data: marchAllData,
         },
         {
           label: 'April Data',
           backgroundColor: '#409FC0',
           borderColor: '#409FC0',
-          data: user2,
+          data: aprAllData,
         }]
     };
 
