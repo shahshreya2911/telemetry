@@ -40,7 +40,7 @@ class ManageChartsController extends Controller
         }
 
         $marchCount = array_count_values($marchData);
-        for($i = 0; $i < 31; $i++)
+        for($i = 1; $i <= 31; $i++)
         {
             if(!isset($marchCount[$i]))
             {
@@ -52,7 +52,7 @@ class ManageChartsController extends Controller
 
 
         $AprCount = array_count_values($AprData);
-        for($i = 0; $i < 31; $i++)
+        for($i = 1; $i <= 31; $i++)
         {
             if(!isset($AprCount[$i]))
             {

@@ -28,10 +28,7 @@
                         <h3>Pie Chart</h3>
                         <canvas id="canvas_piechart" height="280" width="600"></canvas>
                     </div>
-                    <div class="col-md-8 chart_data">
-                        <h3>Polar Area Chart</h3>
-                        <canvas id="canvas_polarchart" height="280" width="600"></canvas>
-                    </div>
+                   
                 </div>
             </div>
         </div>
@@ -44,9 +41,9 @@
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-    var year = <?php echo $year; ?>;
-    var user = <?php echo $user; ?>;
-    var user2 = <?php echo $user2; ?>;
+    // var year = <?php echo $year; ?>;
+    // var user = <?php echo $user; ?>;
+    // var user2 = <?php echo $user2; ?>;
 
     var days = <?php echo $days; ?>;
     var marchAllData = <?php echo $marchAllData; ?>;
@@ -115,19 +112,7 @@
             }
         });
 
-        ///////////////// Pyramid chart 
-        var ctx = document.getElementById("canvas_polarchart").getContext("2d");
-        window.myBar = new Chart(ctx, {
-            type: 'polarArea',
-            data: barChartData,
-            options: {
-                responsive: true,
-                title: {
-                    display: true,
-                    text: 'Yearly User Joined'
-                }
-            }
-        });
+   
     };
 </script>
 @endpush
