@@ -48,9 +48,9 @@
     var days = <?php echo $days; ?>;
     var marchAllData = <?php echo $marchAllData; ?>;
     var aprAllData = <?php echo $aprAllData; ?>;
-    console.log(days); 
-    console.log(marchAllData); 
-    console.log(aprAllData); 
+    // console.log(days); 
+    // console.log(marchAllData); 
+    // console.log(aprAllData); 
 
     var color = <?php echo $color; ?>;
 
