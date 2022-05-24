@@ -52,7 +52,7 @@ class ManageChartsController extends Controller
 
 
         $AprCount = array_count_values($AprData);
-        for($i = 0; $i <= 31; $i++)
+        for($i = 0; $i < 31; $i++)
         {
             if(!isset($AprCount[$i]))
             {
