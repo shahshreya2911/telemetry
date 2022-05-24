@@ -44,9 +44,9 @@
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-    var year = <?php echo $year; ?>;
-    var user = <?php echo $user; ?>;
-    var user2 = <?php echo $user2; ?>;
+    // var year = <?php echo $year; ?>;
+    // var user = <?php echo $user; ?>;
+    // var user2 = <?php echo $user2; ?>;
 
     var days = <?php echo $days; ?>;
     var marchAllData = <?php echo $marchAllData; ?>;
