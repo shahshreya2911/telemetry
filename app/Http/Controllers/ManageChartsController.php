@@ -47,7 +47,9 @@ class ManageChartsController extends Controller
                 $marchCount[$i] = '';
             }
         }
-        $marchAllData = ksort($marchCount);
+        // $marchAllData = ksort($marchCount);
+        $marchAllData = $marchCount; 
+
 
         $AprCount = array_count_values($AprData);
         for($i = 0; $i <= 31; $i++)
@@ -57,13 +59,9 @@ class ManageChartsController extends Controller
                 $AprCount[$i] = '';
             }
         }
-        $aprAllData = ksort($AprCount);
-
-        echo '<pre>'; 
-        print_r($marchAllData); 
-        print_r($aprAllData); 
-        exit;
-
+        // $aprAllData = ksort($AprCount);
+        $aprAllData = $AprCount; 
+       
 
         $year = ['2015','2016','2017','2018','2019','2020'];
         $user = ['25','12','44','20','2','37'];
