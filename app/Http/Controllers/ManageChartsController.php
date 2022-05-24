@@ -60,8 +60,8 @@ class ManageChartsController extends Controller
         $aprAllData = ksort($AprCount);
 
         echo '<pre>'; 
-        print_r($marchData); 
-        print_r($AprData); 
+        print_r($marchCount); 
+        print_r($AprCount); 
         exit;
 
 
