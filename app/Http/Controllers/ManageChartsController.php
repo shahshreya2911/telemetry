@@ -23,10 +23,49 @@ class ManageChartsController extends Controller
     public function index(Request $request)
     {
         
+        $marchData = []; 
+        $AprData = []; 
+        $users = User::get(); 
+        foreach($users as $key => $value){
+            $month = $value->created_at->format('m'); 
+            $day = $value->created_at->format('d'); 
+            
+            if($month == '03'){
+                array_push($marchData,$day);
+            }
+            if($month == '04'){
+                array_push($AprData,$day);
+            }
+            echo ' <br> month '.$month.' date : '.$day;  
+        }
+
+        $marchCount = array_count_values($marchData);
+        for($i = 0; $i <= 31; $i++)
+        {
+            if(!isset($marchCount[$i]))
+            {
+                $marchCount[$i] = '';
+            }
+        }
+        $marchAllData = ksort($marchCount);
+
+        $AprCount = array_count_values($AprData);
+        for($i = 0; $i <= 31; $i++)
+        {
+            if(!isset($AprCount[$i]))
+            {
+                $AprCount[$i] = '';
+            }
+        }
+        $aprAllData = ksort($AprCount);
+
+
 
         $year = ['2015','2016','2017','2018','2019','2020'];
         $user = ['25','12','44','20','2','37'];
         $user2 = ['28','5','37','25','10','30'];
+
+        $days = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]; 
         $color = ['#ffcccc','#ffffcc','#ccf2ff','#ffd9cc','#e6ccff','#f2ffcc'];
 
         return view('charts.index')->with('year',json_encode($year,JSON_NUMERIC_CHECK))->with('user',json_encode($user,JSON_NUMERIC_CHECK))->with('user2',json_encode($user2,JSON_NUMERIC_CHECK))->with('color',json_encode($color,JSON_NUMERIC_CHECK));
