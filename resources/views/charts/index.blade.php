@@ -58,7 +58,6 @@
     var color = <?php echo $color; ?>;
 
     var barChartData = {
-        labels: days,
         datasets: [{
           label: 'March Data',
           backgroundColor: '#EB984E',
