@@ -36,7 +36,7 @@ class ManageChartsController extends Controller
             if($month == '04'){
                 array_push($AprData,$day);
             }
-            echo ' <br> month '.$month.' date : '.$day;  
+            // echo ' <br> month '.$month.' date : '.$day;  
         }
 
         $marchCount = array_count_values($marchData);
@@ -60,8 +60,8 @@ class ManageChartsController extends Controller
         $aprAllData = ksort($AprCount);
 
         echo '<pre>'; 
-        print_r($marchAllData); 
-        print_r($aprAllData); 
+        print_r($marchData); 
+        print_r($AprData); 
         exit;
 
 
