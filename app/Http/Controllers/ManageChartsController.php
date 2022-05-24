@@ -59,6 +59,10 @@ class ManageChartsController extends Controller
         }
         $aprAllData = ksort($AprCount);
 
+        echo '<pre>'; 
+        print_r($marchAllData); 
+        print_r($aprAllData); 
+        exit;
 
 
         $year = ['2015','2016','2017','2018','2019','2020'];
