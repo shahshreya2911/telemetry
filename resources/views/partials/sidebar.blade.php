@@ -68,7 +68,7 @@
                 <li class="menu-item menu-item-active" aria-haspopup="true">
                     <a href="{{route('customers')}}" class="menu-link">
                         <span class="svg-icon menu-icon">
-                        <i class="fas fa-user-tie" aria-hidden="true"></i>
+                        <i class="fas fa-users" aria-hidden="true"></i>
                         </span>
                         <span class="menu-text">Customers</span>
                     </a>

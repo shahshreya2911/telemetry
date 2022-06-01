@@ -71,9 +71,6 @@ Route::group([ 'middleware' => [ 'Admin' ]], function () {
         Route::post('storeedit', [ManageUsersController::class, 'storeedit'])->name('users.storeedit');
         Route::get('delete/{id}', [ManageUsersController::class, 'delete'])->name('users.delete');
     }); 
-    Route::group(['prefix' => 'customers'], function () {
-        Route::get('/', [ManageUsersController::class, 'showCustomer'])->name('customers');
-    });    
 });
 
 
