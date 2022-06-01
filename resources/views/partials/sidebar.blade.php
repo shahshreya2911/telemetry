@@ -65,6 +65,14 @@
                         <span class="menu-text">Manage Users</span>
                     </a>
                 </li>
+                <li class="menu-item menu-item-active" aria-haspopup="true">
+                    <a href="{{route('customers')}}" class="menu-link">
+                        <span class="svg-icon menu-icon">
+                        <i class="fas fa-user-tie" aria-hidden="true"></i>
+                        </span>
+                        <span class="menu-text">Customers</span>
+                    </a>
+                </li>
                 @endif
                 <li class="menu-item menu-item-active" aria-haspopup="true">
                     <a href="{{route('charts')}}" class="menu-link">

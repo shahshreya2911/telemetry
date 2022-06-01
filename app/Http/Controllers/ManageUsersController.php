@@ -30,6 +30,19 @@ class ManageUsersController extends Controller
         return view('users.index',compact('users'));
     }
 
+    public function showCustomer()
+    {
+        // echo url('/');exit; 
+        $users = Users::where('role','!=', 'admin')
+                ->where('role','customer')
+                ->orderBy('created_at','desc')
+                ->get(); 
+
+        return view('users.customer_listing',compact('users'));
+    }
+
+
+
     public function create()
     {
         return view('users.add');

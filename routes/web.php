@@ -70,6 +70,9 @@ Route::group([ 'middleware' => [ 'Admin' ]], function () {
         Route::get('edit/{id}', [ManageUsersController::class, 'edit'])->name('users.edit');
         Route::post('storeedit', [ManageUsersController::class, 'storeedit'])->name('users.storeedit');
         Route::get('delete/{id}', [ManageUsersController::class, 'delete'])->name('users.delete');
+    }); 
+    Route::group(['prefix' => 'customers'], function () {
+        Route::get('/', [ManageUsersController::class, 'showCustomer'])->name('customers');
     });    
 });
 
