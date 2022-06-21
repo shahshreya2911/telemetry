@@ -121,8 +121,10 @@ class ManageChartsController extends Controller
         }
 
         print_r($days); 
-
-        print_r($events_list); 
+        echo '<hr> event list  : <br>  '; 
+        print_r($events_list);
+        echo '<hr> count event days  : <br>  '; 
+        print_r(array_count_values($events_list)); 
 
 
         $now = Carbon::now();
@@ -133,6 +135,7 @@ for($i = 1; $i < 31; $i++) {
   $dates[] = $now->subDays(1)->format('d/m/Y');
 }
 
+echo '<hr> all dates  : <br>  '; 
 print_r($dates);
 
         // use App\Models\Sites;
