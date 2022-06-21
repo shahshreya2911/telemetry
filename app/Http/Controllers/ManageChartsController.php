@@ -86,9 +86,8 @@ class ManageChartsController extends Controller
         echo ' | month: '.$today->month;
         echo ' | year: '.$today->year;
 
-        $days=cal_days_in_month(CAL_GREGORIAN,$today->month,$today->year);
+        // $days=cal_days_in_month(CAL_GREGORIAN,$today->month,$today->year);
 
-        echo ' | days: '.$days;
         $events = Events::get();
 
         foreach ($events as $key => $value) {
