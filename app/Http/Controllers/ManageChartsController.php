@@ -81,7 +81,6 @@ class ManageChartsController extends Controller
         echo '<pre> '; 
         
         $today= Carbon::now();
-
         $totaldays = $today->month($today->month)->daysInMonth;
         $days = []; 
         for ($i=1; $i <= $totaldays ; $i++) { 
@@ -98,6 +97,8 @@ class ManageChartsController extends Controller
         $events = Events::get();
 
         foreach ($events as $key => $value) {
+            echo '<br> '; 
+            echo $value->_id; 
             print_r($value); 
         }
 
@@ -108,7 +109,7 @@ class ManageChartsController extends Controller
         // print_r($events); 
 
         exit; 
-        return view('charts.user-chart')->with('year',json_encode($year,JSON_NUMERIC_CHECK))->with('user',json_encode($user,JSON_NUMERIC_CHECK))->with('user2',json_encode($user2,JSON_NUMERIC_CHECK))->with('color',json_encode($color,JSON_NUMERIC_CHECK))->with('days',json_encode($days,JSON_NUMERIC_CHECK))->with('marchAllData',json_encode($marchAllData,JSON_NUMERIC_CHECK))->with('aprAllData',json_encode($aprAllData,JSON_NUMERIC_CHECK));
+        return view('charts.user-chart')->with('days',json_encode($days,JSON_NUMERIC_CHECK))->with('marchAllData',json_encode($marchAllData,JSON_NUMERIC_CHECK))->with('aprAllData',json_encode($aprAllData,JSON_NUMERIC_CHECK));
     }
 
 }
