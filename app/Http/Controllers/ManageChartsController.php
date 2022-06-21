@@ -135,7 +135,8 @@ class ManageChartsController extends Controller
         echo '<hr> event list  : <br>  '; 
         print_r($events_list);
         echo '<hr> count event days  : <br>  '; 
-        $event_data_final = print_r(array_count_values($events_list)); 
+        // $event_data_final = print_r(array_count_values($events_list)); 
+        $event_data_final =array_count_values($events_list); 
 
 
         $now = Carbon::now();
@@ -147,7 +148,7 @@ class ManageChartsController extends Controller
         }
 
 
-        
+
 
         echo '<hr> all dates  : <br>  '; 
         print_r($dates);
