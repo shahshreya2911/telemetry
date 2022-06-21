@@ -103,8 +103,8 @@ class ManageChartsController extends Controller
             echo $value->_id; 
             echo '<br> '; 
             
-            echo 
-            $event_date = $value->created_at; 
+            $event_date = $value->created_at->format('d/m/Y H:i:s A'); 
+            echo $event_date;             
 
             array_push($events_list,$event_date); 
 
