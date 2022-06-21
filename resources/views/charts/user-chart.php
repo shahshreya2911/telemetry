@@ -1,8 +1,8 @@
 @extends('layouts.app_new')
-@section('page-heading', 'Charts')
+@section('page-heading', 'Event Chart')
 @section('breadcrumbs')
     <li class="breadcrumb-item active">
-       Charts
+       Event Chart 
     </li>
 @stop
 

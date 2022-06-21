@@ -96,7 +96,6 @@ class ManageChartsController extends Controller
             array_push($days,$i);
         }
 
-
         // $days=cal_days_in_month(CAL_GREGORIAN,$today->month,$today->year);
 
         $events = Events::get();
@@ -151,7 +150,7 @@ class ManageChartsController extends Controller
         // print_r($event_data_final1); 
 
         // exit; 
-        return view('charts.user-chart')->with('days',json_encode($dates,JSON_NUMERIC_CHECK))->with('event_data_final',json_encode($event_data_final,JSON_NUMERIC_CHECK));
+        return view('charts.user-chart')->with('days',json_encode($dates,JSON_NUMERIC_CHECK))->with('event_data_final',json_encode($event_data_final1,JSON_NUMERIC_CHECK));
     }
 
 }
