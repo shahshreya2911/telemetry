@@ -81,7 +81,9 @@ class ManageChartsController extends Controller
         echo '<pre> '; 
         
         $today= Carbon::now();
-        echo 'month: '.$today->month;
+
+        echo $today->month($today->month)->daysInMonth;
+        echo ' | month: '.$today->month;
         echo ' | year: '.$today->year;
 
         $days=cal_days_in_month(CAL_GREGORIAN,$today->month,$today->year);
