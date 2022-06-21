@@ -49,8 +49,7 @@
     // console.log(marchAllData); 
     // console.log(aprAllData); 
 
-    // var color = <?php echo $color; ?>;
-
+    
     var barChartData = {
         datasets: [{
           label: 'Event Data',
