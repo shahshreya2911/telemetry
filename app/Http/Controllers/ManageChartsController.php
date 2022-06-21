@@ -103,7 +103,11 @@ class ManageChartsController extends Controller
             echo $value->_id; 
             echo '<br> '; 
             
-            array_push($events_list,$value->created_at[0]['date']); 
+            echo $value->created_at; 
+
+            // array_push($events_list,$value->created_at); 
+
+            
             // print_r($value); 
             // $sitedata = Sites::find($value->site_id);
             // if(!empty($sitedata)){
@@ -117,7 +121,7 @@ class ManageChartsController extends Controller
 
         print_r($days); 
 
-        print_r($events_list); 
+        // print_r($events_list); 
 
         // use App\Models\Sites;
         
