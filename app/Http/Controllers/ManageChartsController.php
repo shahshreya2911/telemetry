@@ -78,8 +78,11 @@ class ManageChartsController extends Controller
     public function eventChart(){
         echo 'here '; 
         
-        $events = Events::get();
+        $events = Events::join('sites', 'events.site_id', '=', 'sites._id')
+                        ->select('events.*', 'sites.date_activated')
+                        ->get();
 
+        echo '<pre> '; 
         print_r($events); 
 
         exit; 
