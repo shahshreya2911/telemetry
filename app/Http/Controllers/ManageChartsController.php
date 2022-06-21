@@ -130,7 +130,7 @@ class ManageChartsController extends Controller
 $dates = [$now->format('d/m/Y')];
 
 for($i = 1; $i < 31; $i++) {
-  $dates[] = $now->subDays($i)->format('d/m/Y');
+  $dates[] = $now->subDays(1)->format('d/m/Y');
 }
 
 print_r($dates);
