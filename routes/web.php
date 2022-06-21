@@ -78,6 +78,7 @@ Route::get('/myprofile', [ManageProfileController::class, 'index'])->name('mypro
 Route::post('myprofile/update', [ManageProfileController::class, 'update'])->name('myprofile.update');
 // chart 
 Route::get('/charts', [ManageChartsController::class, 'index'])->name('charts');
+Route::get('/event-chart', [ManageChartsController::class, 'eventChart'])->name('event-chart');
 
 Route::get('/customers', [ManageCustomersController::class, 'index'])->name('customers');
 Route::get('/sites', [ManageSitesController::class, 'index'])->name('sites');
