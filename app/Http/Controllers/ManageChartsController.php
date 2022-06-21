@@ -96,25 +96,28 @@ class ManageChartsController extends Controller
 
         $events = Events::get();
 
-        $site_activated_list = []; 
+        // $site_activated_list = []; 
+        $events_list = []; 
         foreach ($events as $key => $value) {
             echo '<br> '; 
             echo $value->_id; 
             echo '<br> '; 
+            
+            array_push($events_list,$value->created_at); 
             // print_r($value); 
-            $sitedata = Sites::find($value->site_id);
-            if(!empty($sitedata)){
-                echo $sitedata->date_activated; 
-                array_push($site_activated_list,$sitedata->date_activated);
-             // print_r($sitedata); 
-            }else{
-                echo 'not found '; 
-            }
+            // $sitedata = Sites::find($value->site_id);
+            // if(!empty($sitedata)){
+            //     echo $sitedata->date_activated; 
+            //     array_push($site_activated_list,$sitedata->date_activated);
+            //  // print_r($sitedata); 
+            // }else{
+            //     echo 'not found '; 
+            // }
         }
 
         print_r($days); 
 
-        print_r($site_activated_list); 
+        print_r($events_list); 
 
         // use App\Models\Sites;
         
