@@ -150,9 +150,12 @@ class ManageChartsController extends Controller
         print_r($dates);
 
         foreach ($dates as $date_key => $date_value) {
-            if(in_array($date_value, $event_data_final)){
-                $event_data_final[$date_value] = 0; 
-            }
+            echo '<br> '; 
+            echo $date_value; 
+            print_r($event_data_final); 
+            // if(in_array($date_value, $event_data_final)){
+            //     $event_data_final[$date_value] = 0; 
+            // }
         }
 
 
