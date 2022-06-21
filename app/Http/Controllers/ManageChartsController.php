@@ -124,6 +124,17 @@ class ManageChartsController extends Controller
 
         print_r($events_list); 
 
+
+        $now = Carbon::now();
+
+$dates = [$now->format('M d, Y')];
+
+for($i = 1; $i < 30; $i++) {
+  $dates[] = $now->subDays($i)->format('M d, Y');
+}
+
+print_r($dates);
+
         // use App\Models\Sites;
         
         // print_r($events); 
