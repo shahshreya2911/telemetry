@@ -7,11 +7,12 @@ use DataTables;
 use App\Models\User;
 use App\Models\Roles;
 use App\Models\Events;
+use App\Models\Sites;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 // use App\Http\Controllers\Validator; 
 use Illuminate\Support\Facades\Validator;
-
+use Carbon\Carbon;
 
 class ManageChartsController extends Controller
 {
@@ -77,12 +78,21 @@ class ManageChartsController extends Controller
 
     public function eventChart(){
         echo 'here '; 
+        echo '<pre> '; 
         
+        $today= Carbon::now();
+        echo $today->month;
+
         $events = Events::join('sites', 'events.site_id', '=', 'sites._id')
                         ->get();
 
-        echo '<pre> '; 
-        print_r($events); 
+        foreach ($events as $key => $value) {
+            print_r($value); 
+        }
+
+        // use App\Models\Sites;
+        
+        // print_r($events); 
 
         exit; 
         return view('charts.user-chart')->with('year',json_encode($year,JSON_NUMERIC_CHECK))->with('user',json_encode($user,JSON_NUMERIC_CHECK))->with('user2',json_encode($user2,JSON_NUMERIC_CHECK))->with('color',json_encode($color,JSON_NUMERIC_CHECK))->with('days',json_encode($days,JSON_NUMERIC_CHECK))->with('marchAllData',json_encode($marchAllData,JSON_NUMERIC_CHECK))->with('aprAllData',json_encode($aprAllData,JSON_NUMERIC_CHECK));
