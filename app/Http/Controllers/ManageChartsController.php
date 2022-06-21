@@ -103,11 +103,12 @@ class ManageChartsController extends Controller
             echo $value->_id; 
             echo '<br> '; 
             
-            echo $value->created_at; 
+            echo 
+            $event_date = $value->created_at; 
 
-            // array_push($events_list,$value->created_at); 
+            array_push($events_list,$event_date); 
 
-            
+
             // print_r($value); 
             // $sitedata = Sites::find($value->site_id);
             // if(!empty($sitedata)){
