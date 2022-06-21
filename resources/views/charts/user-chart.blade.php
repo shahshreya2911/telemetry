@@ -21,11 +21,11 @@
                         <h3>Line Chart</h3>
                         <canvas id="canvas_linechart" height="280" width="600"></canvas>
                     </div>
-                    <div class="col-md-8 chart_data">
+                    <div class="col-md-8 chart_data" style="display: none;">
                         <h3>Bar Chart</h3>
                         <canvas id="canvas" width="100%"></canvas>
                     </div>
-                    <div class="col-md-8 chart_data">
+                    <div class="col-md-8 chart_data" style="display: none;">
                         <h3>Pie Chart</h3>
                         <canvas id="canvas_piechart" height="280" width="600"></canvas>
                     </div>
