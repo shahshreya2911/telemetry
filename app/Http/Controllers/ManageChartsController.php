@@ -79,7 +79,6 @@ class ManageChartsController extends Controller
         echo 'here '; 
         
         $events = Events::join('sites', 'events.site_id', '=', 'sites._id')
-                        ->select('events.*', 'sites.date_activated')
                         ->get();
 
         echo '<pre> '; 
