@@ -82,9 +82,16 @@ class ManageChartsController extends Controller
         
         $today= Carbon::now();
 
-        echo $today->month($today->month)->daysInMonth;
+        $totaldays = $today->month($today->month)->daysInMonth;
+        $days = []; 
+        for ($i=1; $i <= $totaldays ; $i++) { 
+            array_push($days,$i);
+        }
+
         echo ' | month: '.$today->month;
         echo ' | year: '.$today->year;
+
+
 
         // $days=cal_days_in_month(CAL_GREGORIAN,$today->month,$today->year);
 
@@ -93,6 +100,8 @@ class ManageChartsController extends Controller
         foreach ($events as $key => $value) {
             print_r($value); 
         }
+
+        print_r($days); 
 
         // use App\Models\Sites;
         
