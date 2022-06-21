@@ -96,6 +96,7 @@ class ManageChartsController extends Controller
 
         $events = Events::get();
 
+        $site_activated_list = []; 
         foreach ($events as $key => $value) {
             echo '<br> '; 
             echo $value->_id; 
@@ -103,7 +104,9 @@ class ManageChartsController extends Controller
             // print_r($value); 
             $sitedata = Sites::find($value->site_id);
             if(!empty($sitedata)){
-             print_r($sitedata); 
+                echo $sitedata->date_activated; 
+                array_push($site_activated_list,$sitedata->date_activated);
+             // print_r($sitedata); 
             }else{
                 echo 'not found '; 
             }
