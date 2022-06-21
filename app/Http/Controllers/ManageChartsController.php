@@ -81,10 +81,13 @@ class ManageChartsController extends Controller
         echo '<pre> '; 
         
         $today= Carbon::now();
-        echo $today->month;
+        echo 'month: '.$today->month;
+        echo ' | year: '.$today->year;
 
-        $events = Events::join('sites', 'events.site_id', '=', 'sites._id')
-                        ->get();
+        $days=cal_days_in_month(CAL_GREGORIAN,$today->month,$today->year);
+
+        echo ' | days: '.$days;
+        $events = Events::get();
 
         foreach ($events as $key => $value) {
             print_r($value); 
