@@ -114,6 +114,8 @@ class ManageChartsController extends Controller
 
         print_r($days); 
 
+        print_r($site_activated_list); 
+
         // use App\Models\Sites;
         
         // print_r($events); 
