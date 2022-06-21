@@ -42,31 +42,21 @@
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-    // var year = <?php echo $year; ?>;
-    // var user = <?php echo $user; ?>;
-    // var user2 = <?php echo $user2; ?>;
 
     var days = <?php echo $days; ?>;
-    var marchAllData = <?php echo $marchAllData; ?>;
-    var aprAllData = <?php echo $aprAllData; ?>;
+    var event_data_final = <?php echo $event_data_final; ?>;
     // console.log(days); 
     // console.log(marchAllData); 
     // console.log(aprAllData); 
 
-    var color = <?php echo $color; ?>;
+    // var color = <?php echo $color; ?>;
 
     var barChartData = {
         datasets: [{
-          label: 'March Data',
+          label: 'Event Data',
           backgroundColor: '#EB984E',
           borderColor: '#EB984E',
-          data: marchAllData,
-        },
-        {
-          label: 'April Data',
-          backgroundColor: '#409FC0',
-          borderColor: '#409FC0',
-          data: aprAllData,
+          data: event_data_final,
         }]
     };
 

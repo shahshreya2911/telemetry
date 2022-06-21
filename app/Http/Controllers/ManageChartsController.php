@@ -124,26 +124,26 @@ class ManageChartsController extends Controller
         echo '<hr> event list  : <br>  '; 
         print_r($events_list);
         echo '<hr> count event days  : <br>  '; 
-        print_r(array_count_values($events_list)); 
+        $event_data_final = print_r(array_count_values($events_list)); 
 
 
         $now = Carbon::now();
 
-$dates = [$now->format('d/m/Y')];
+        $dates = [$now->format('d/m/Y')];
 
-for($i = 1; $i < 31; $i++) {
-  $dates[] = $now->subDays(1)->format('d/m/Y');
-}
+        for($i = 1; $i < 31; $i++) {
+          $dates[] = $now->subDays(1)->format('d/m/Y');
+        }
 
-echo '<hr> all dates  : <br>  '; 
-print_r($dates);
+        echo '<hr> all dates  : <br>  '; 
+        print_r($dates);
 
         // use App\Models\Sites;
         
         // print_r($events); 
 
-        exit; 
-        return view('charts.user-chart')->with('days',json_encode($days,JSON_NUMERIC_CHECK))->with('marchAllData',json_encode($marchAllData,JSON_NUMERIC_CHECK))->with('aprAllData',json_encode($aprAllData,JSON_NUMERIC_CHECK));
+        // exit; 
+        return view('charts.user-chart')->with('days',json_encode($dates,JSON_NUMERIC_CHECK))->with('event_data_final',json_encode($event_data_final,JSON_NUMERIC_CHECK));
     }
 
 }
