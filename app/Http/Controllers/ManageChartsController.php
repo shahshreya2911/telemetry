@@ -127,9 +127,9 @@ class ManageChartsController extends Controller
 
         $now = Carbon::now();
 
-$dates = [$now->format('M d, Y')];
+$dates = [$now->format('d/m/Y')];
 
-for($i = 1; $i < 30; $i++) {
+for($i = 1; $i < 31; $i++) {
   $dates[] = $now->subDays($i)->format('d/m/Y');
 }
 
