@@ -102,7 +102,11 @@ class ManageChartsController extends Controller
             echo '<br> '; 
             // print_r($value); 
             $sitedata = Sites::find($value->site_id);
+            if(!empty($sitedata)){
              print_r($sitedata); 
+            }else{
+                echo 'not found '; 
+            }
         }
 
         print_r($days); 
