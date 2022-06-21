@@ -99,7 +99,10 @@ class ManageChartsController extends Controller
         foreach ($events as $key => $value) {
             echo '<br> '; 
             echo $value->_id; 
-            print_r($value); 
+            echo '<br> '; 
+            // print_r($value); 
+            $sitedata = Sites::find($value->site_id);
+             print_r($sitedata); 
         }
 
         print_r($days); 
