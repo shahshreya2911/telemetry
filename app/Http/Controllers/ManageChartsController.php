@@ -81,6 +81,7 @@ class ManageChartsController extends Controller
         print_r($marchAllData);
 
 
+        exit; 
 
         return view('charts.index')->with('year',json_encode($year,JSON_NUMERIC_CHECK))->with('user',json_encode($user,JSON_NUMERIC_CHECK))->with('user2',json_encode($user2,JSON_NUMERIC_CHECK))->with('color',json_encode($color,JSON_NUMERIC_CHECK))->with('days',json_encode($days,JSON_NUMERIC_CHECK))->with('marchAllData',json_encode($marchAllData,JSON_NUMERIC_CHECK))->with('aprAllData',json_encode($aprAllData,JSON_NUMERIC_CHECK));
     }
@@ -152,7 +153,7 @@ class ManageChartsController extends Controller
         
         // print_r($events); 
 
-        // exit; 
+        exit; 
         return view('charts.user-chart')->with('days',json_encode($dates,JSON_NUMERIC_CHECK))->with('event_data_final',json_encode($event_data_final,JSON_NUMERIC_CHECK));
     }
 
