@@ -89,7 +89,7 @@ class ManageChartsController extends Controller
 
     public function eventChart(){
         echo 'here '; 
-        // echo '<pre> '; 
+        echo '<pre> '; 
         
         $today= Carbon::now();
         $totaldays = $today->month($today->month)->daysInMonth;
@@ -149,9 +149,17 @@ class ManageChartsController extends Controller
         echo '<hr> all dates  : <br>  '; 
         print_r($dates);
 
+        foreach ($dates as $date_key => $date_value) {
+            if(in_array($date_value, $event_data_final)){
+                $event_data_final[$date_value] = 0; 
+            }
+        }
+
+
+
         // use App\Models\Sites;
-        
-        // print_r($events); 
+        echo '<hr> '; 
+        print_r($event_data_final); 
 
         exit; 
         return view('charts.user-chart')->with('days',json_encode($dates,JSON_NUMERIC_CHECK))->with('event_data_final',json_encode($event_data_final,JSON_NUMERIC_CHECK));
