@@ -146,23 +146,31 @@ class ManageChartsController extends Controller
           $dates[] = $now->subDays(1)->format('d/m/Y');
         }
 
+
+        
+
         echo '<hr> all dates  : <br>  '; 
         print_r($dates);
 
+
+        echo '<hr> Final ARY  dates  : <br>  '; 
+        $event_data_final1 = []; 
         foreach ($dates as $date_key => $date_value) {
             echo '<br> '; 
-            echo $date_value; 
-            print_r($event_data_final); 
-            // if(in_array($date_value, $event_data_final)){
-            //     $event_data_final[$date_value] = 0; 
-            // }
+            // echo $date_value; 
+            // print_r($event_data_final); 
+ 
+            if (!array_key_exists($date_value,$event_data_final)){
+                $event_data_final1[$date_value] = 0; 
+            }else{
+                $event_data_final1[$date_value] = $event_data_final[$date_value]; 
+            }
         }
-
 
 
         // use App\Models\Sites;
         echo '<hr> '; 
-        print_r($event_data_final); 
+        print_r($event_data_final1); 
 
         exit; 
         return view('charts.user-chart')->with('days',json_encode($dates,JSON_NUMERIC_CHECK))->with('event_data_final',json_encode($event_data_final,JSON_NUMERIC_CHECK));
